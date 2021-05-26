@@ -16,15 +16,5 @@
   }
 }
 
-@mixin container {
-  width: 98%;
-  margin: 0 auto;
-  @include tablet {
-    width: 80%;
-  }
-  @include desktop() {
-    width: 60%;
-  }
-}
 // mixin for dark mode
 // mixin for light mode

@@ -1,10 +1,6 @@
 @import "./base.css";
 @import "variables";
 @import "mixins";
+@import "utilities";
 @import 'header';
 @import 'main';
-
-.container {
-  @include container;
-}
-
