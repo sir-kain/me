@@ -1,0 +1,30 @@
+@mixin mobile {
+  @media #{$small-and-down} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$medium-and-up} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$large-and-up} {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 98%;
+  margin: 0 auto;
+  @include tablet {
+    width: 80%;
+  }
+  @include desktop() {
+    width: 60%;
+  }
+}
+// mixin for dark mode
+// mixin for light mode

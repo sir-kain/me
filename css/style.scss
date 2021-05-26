@@ -1,5 +1,10 @@
-$yellow : yellow;
+@import "./base.css";
+@import "variables";
+@import "mixins";
+@import 'header';
+@import 'main';
 
-body {
-  background: $yellow;
+.container {
+  @include container;
 }
+
