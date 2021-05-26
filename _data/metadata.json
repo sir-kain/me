@@ -18,5 +18,39 @@
     "nickname": "_sir_kane",
     "email": "ahmadouwalyndiaye@gmail.com",
     "url": "https://sir-kane.netlify.app/"
-  }
+  },
+  "contacts": [
+    {
+      "title": "Github",
+      "slug": "github",
+      "logo": "github.png",
+      "url": "https://github.com/sir-kain",
+      "h": "25",
+      "w": "25"
+    },
+    {
+      "title": "LinkedIn",
+      "slug": "linkedin",
+      "logo": "linkedin.png",
+      "url": "https://www.linkedin.com/in/ndiaye-ahmadou-waly-a61056ba/",
+      "h": "25",
+      "w": "25"
+    },
+    {
+      "title": "StackOverflow",
+      "slug": "stackoverflow",
+      "logo": "stackoverflow.png",
+      "url": "https://stackoverflow.com/users/8319507/sir-kane",
+      "h": "125",
+      "w": "120"
+    },
+    {
+      "title": "Twitter",
+      "slug": "twitter",
+      "logo": "twitter.png",
+      "url": "https://twitter.com/_sir_kane",
+      "h": "25",
+      "w": "25"
+    }
+  ]
 }

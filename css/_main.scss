@@ -4,12 +4,8 @@ main {
   .contacts {
     padding: .5rem 0;
     display: flex;
-    gap: .5rem;
-
-    @supports(gap: .5rem) {
-      li {
-        margin-right: .5rem;
-      }
+    li {
+      margin-right: .5rem;
     }
   }
 }

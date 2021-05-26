@@ -2,25 +2,15 @@
   <p>Hello, I'm <b>{{metadata.author.name}}</b>. I'm a passionate web developer!</p>
   <p class="mt-1">You can also find me here:</p>
   <ul class="contacts">
-    <li>
-      <a href="#" target="_blank" title="Github">
-        {% image "github.png","github", "30", "30" %}
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_blank" title="LinkedIn">
-        {% image "linkedin.png", "LinkedIn", "30", "30" %}
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_blank" title="StackOverflow">
-        {% image "stackoverflow.png", "StackOverflow", "130", "120" %}
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_blank" title="Twitter">
-        {% image "twitter.png", "twitter", "30", "30" %}
-      </a>
-    </li>
-  </ul>
-</div>
+    {% for contact in metadata.contacts %}
+      <li>
+        <a href="{{ contact.url | url }}" target="_blank" title="{{ contact.title }}">
+          {% image contact.logo,
+          contact.slug,
+          contact.w,
+          contact.h %}
+        </a>
+      </li>
+      {%endfor%}
+    </ul>
+  </div>
