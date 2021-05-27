@@ -20,8 +20,8 @@ async function imageShortcode(src, alt, w, h) {
   let metadata = await Image(src, {
     widths: [600, 900, 1500],
     formats: ["webp", "jpeg"],
-    urlPath: "/images/",
-    outputDir: "./_site/images/",
+    urlPath: "/img/",
+    outputDir: "./_site/img/",
     /* =====
     Now we'll make sure each resulting file's name will 
     make sense to you. **This** is why you need 
@@ -110,8 +110,8 @@ module.exports = function (eleventyConfig) {
 
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
+  eleventyConfig.addPassthroughCopy("css/*.css");
+  eleventyConfig.addPassthroughCopy("css/fonts");
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

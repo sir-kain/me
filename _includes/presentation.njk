@@ -1,16 +1,18 @@
 <div>
   <p>Hello, I'm <b>{{metadata.author.name}}</b>. I'm a passionate web developer.</p>
-  <p class="mt-2">You can also find me here:</p>
-  <ul class="contacts">
-    {% for contact in metadata.contacts %}
-      <li>
-        <a href="{{ contact.url | url }}" target="_blank" rel="noreferrer" title="{{ contact.title }}">
-          {% image contact.logo,
-          contact.slug,
-          contact.w,
-          contact.h %}
-        </a>
-      </li>
-      {%endfor%}
-    </ul>
+  <div class="d-f mt-1 contacts">
+    <p>You can find me on:</p>
+    <ul>
+      {% for contact in metadata.contacts %}
+        <li>
+          <a href="{{ contact.url | url }}" target="_blank" rel="noreferrer" title="{{ contact.title }}">
+            {% image contact.logo,
+            contact.slug,
+            contact.w,
+            contact.h %}
+          </a>
+        </li>
+        {%endfor%}
+      </ul>
+    </div>
   </div>

@@ -2,13 +2,13 @@ main {
   padding: 2rem 0;
 
   .contacts {
-    margin: .5rem 0 0 1rem;
-    @include tablet {
-      margin: .5rem 0 0 2rem;
-    }
-    display: flex;
-    li {
-      margin-right: 1rem;
+    align-items: center;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin-left: .7rem;
+      }
     }
   }
 
@@ -136,7 +136,11 @@ code {
 
 // post
 .tmpl-post {
-  h1 {
+  font-weight: normal;
+  time {
+    font-size: .95rem;
+    font-weight: 300;
+    display: block;
     margin-bottom: 1rem;
   }
 }
