@@ -2,7 +2,10 @@ main {
   padding: 2rem 0;
 
   .contacts {
-    margin: 1rem 0 0 2rem;
+    margin: .5rem 0 0 1rem;
+    @include tablet {
+      margin: .5rem 0 0 2rem;
+    }
     display: flex;
     li {
       margin-right: 1rem;
@@ -13,8 +16,11 @@ main {
   .postlist {
     display: flex;
     flex-direction: column;
-    gap: .4rem;
-    margin: 1rem 0 1rem 2rem;
+    // gap: .1rem;
+    margin: .5rem 0 .5rem 1rem;
+    @include tablet {
+      margin: .5rem 0 .5rem 2rem;
+    }
   }
   .postlist-item {
     display: flex;
@@ -45,6 +51,12 @@ main {
     text-underline-position: from-font;
     text-underline-offset: 0;
     text-decoration-thickness: 1px;
+    font-weight: bold;
+    color: var(--blue-700);
+    text-decoration: underline;
+    &:hover {
+      color: var(--blue-600);
+    }
   }
   .postlist-item-active .postlist-link {
     font-weight: bold;
@@ -52,6 +64,12 @@ main {
   .tmpl-home .postlist-link {
     font-size: 1.1875em; /* 19px /16 */
     font-weight: 700;
+  }
+  .archive-link {
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -113,4 +131,12 @@ code {
 }
 .highlight-line-remove {
   background-color: #902f2f;
+}
+
+
+// post
+.tmpl-post {
+  h1 {
+    margin-bottom: 1rem;
+  }
 }

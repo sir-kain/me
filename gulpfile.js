@@ -28,9 +28,9 @@ function watchStyle(cb) {
   cb();
 }
 
-function deleteCss(cb) {
-  rimraf("_site/css", (err) => console.error(err));
-  cb();
-}
+// function deleteCss(cb) {
+//   rimraf("_site/css/*.scss", (err) => console.error(err));
+//   cb();
+// }
 
-exports.default = series(deleteCss, style, watchStyle);
+exports.default = series(style, watchStyle);

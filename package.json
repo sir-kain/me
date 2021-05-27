@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "ahmadouwalyndiaye",
+  "version": "0.0.1",
+  "description": "Ahmadou Waly Ndiaye blog.",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/sir-kain/me.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
+    "name": "Ahmadou Waly Ndiaye",
+    "email": "ahmadouwalyndiaye@gmail.com",
     "url": "https://zachleat.com/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/sir-kain/me/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/sir-kain/me#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-img": "^0.9.0",
