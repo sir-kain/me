@@ -12,11 +12,11 @@
   <body>
 
     <header>
-      <div class="container">
-        <span class="home">
-          <a href="{{ '/' | url }}">{{ metadata.author.name }}</a>
-        </span>
-      </div>
+      <a href="{{ '/' | url }}">
+        {% image "sir_kane.jpg",
+        "sir kane avatar", "100", "100" %}
+        <span>{{ metadata.author.name }}</span>
+      </a>
     </header>
 
     <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>

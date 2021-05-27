@@ -21,12 +21,20 @@
   },
   "contacts": [
     {
+      "title": "E-mail",
+      "slug": "e-mail",
+      "logo": "gmail.svg",
+      "url": "mailto:ahmadouwalyndiaye@gmail.com",
+      "h": "25",
+      "w": "25"
+    },
+    {
       "title": "Github",
       "slug": "github",
       "logo": "github.png",
       "url": "https://github.com/sir-kain",
-      "h": "25",
-      "w": "25"
+      "h": "20",
+      "w": "20"
     },
     {
       "title": "LinkedIn",
@@ -41,8 +49,8 @@
       "slug": "stackoverflow",
       "logo": "stackoverflow.png",
       "url": "https://stackoverflow.com/users/8319507/sir-kane",
-      "h": "125",
-      "w": "120"
+      "h": "60",
+      "w": "110"
     },
     {
       "title": "Twitter",

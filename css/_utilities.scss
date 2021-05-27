@@ -1,5 +1,5 @@
 .mt-1 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .container {
@@ -9,6 +9,6 @@
     width: 80%;
   }
   @include desktop() {
-    width: 60%;
+    width: 55%;
   }
 }
