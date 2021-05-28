@@ -1,21 +1,64 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "language": "en",
+  "title": "Ahmadou Waly Ndiaye (_sir_kane)",
+  "url": "https://sir-kane.netlify.app/",
+  "language": "fr",
   "description": "I am writing about my experiences as a naval navel-gazer.",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://sir-kane.netlify.app/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://sir-kane.netlify.app/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
-  }
+    "name": "Ahmadou Waly Ndiaye",
+    "nickname": "_sir_kane",
+    "email": "ahmadouwalyndiaye@gmail.com",
+    "url": "https://sir-kane.netlify.app/"
+  },
+  "contacts": [
+    {
+      "title": "E-mail",
+      "slug": "e-mail",
+      "logo": "gmail.svg",
+      "url": "mailto:ahmadouwalyndiaye@gmail.com",
+      "h": "25",
+      "w": "30"
+    },
+    {
+      "title": "Github",
+      "slug": "github",
+      "logo": "github.png",
+      "url": "https://github.com/sir-kain",
+      "h": "25",
+      "w": "25"
+    },
+    {
+      "title": "LinkedIn",
+      "slug": "linkedin",
+      "logo": "linkedin.png",
+      "url": "https://www.linkedin.com/in/ndiaye-ahmadou-waly-a61056ba/",
+      "h": "25",
+      "w": "30"
+    },
+    {
+      "title": "StackOverflow",
+      "slug": "stackoverflow",
+      "logo": "stackoverflow.png",
+      "url": "https://stackoverflow.com/users/8319507/sir-kane",
+      "h": "25",
+      "w": "110"
+    },
+    {
+      "title": "Twitter",
+      "slug": "twitter",
+      "logo": "twitter.png",
+      "url": "https://twitter.com/_sir_kane",
+      "h": "25",
+      "w": "30"
+    }
+  ]
 }

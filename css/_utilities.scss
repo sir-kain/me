@@ -1,0 +1,14 @@
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+  @include tablet {
+    width: 80%;
+  }
+  @include desktop() {
+    width: 55%;
+  }
+}

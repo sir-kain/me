@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("fonts/RobotoSlab-Bold.eot");
+  src: url("fonts/RobotoSlab-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/RobotoSlab-Bold.woff2") format("woff2"),
+    url("fonts/RobotoSlab-Bold.woff") format("woff"),
+    url("fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("fonts/RobotoSlab-Light.eot");
+  src: url("fonts/RobotoSlab-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/RobotoSlab-Light.woff2") format("woff2"),
+    url("fonts/RobotoSlab-Light.woff") format("woff"),
+    url("fonts/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("fonts/RobotoSlab-Regular.eot");
+  src: url("fonts/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/RobotoSlab-Regular.woff2") format("woff2"),
+    url("fonts/RobotoSlab-Regular.woff") format("woff"),
+    url("fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  @include tablet {
+    font-size: 1.1rem;
+  }
+  color: var(--darkgray);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Direct Links / Markdown Headers */
+.direct-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: 0.1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+  color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+  color: #aaa;
+}

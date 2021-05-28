@@ -1,35 +1,46 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "ahmadouwalyndiaye",
+  "version": "0.0.1",
+  "description": "Ahmadou Waly Ndiaye blog.",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
+    "serve:eleventy": "eleventy --serve",
+    "serve:gulp": "gulp",
+    "start": "npm-run-all --parallel serve:*",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/sir-kain/me.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
+    "name": "Ahmadou Waly Ndiaye",
+    "email": "ahmadouwalyndiaye@gmail.com",
     "url": "https://zachleat.com/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/sir-kain/me/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/sir-kain/me#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.9.0",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "autoprefixer": "^10.2.5",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "luxon": "^1.26.0",
     "markdown-it": "^12.0.4",
-    "markdown-it-anchor": "^7.1.0"
+    "markdown-it-anchor": "^7.1.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.7.1"
   }
 }

@@ -1,0 +1,31 @@
+header {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    img {
+      margin-right: 0.5rem;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+    span {
+      color: var(--darkgray);
+      font-size: 1.7rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @include tablet {
+      img {
+        height: 110px;
+        width: 110px;
+      }
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+}
