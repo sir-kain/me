@@ -33,4 +33,5 @@ function watchStyle(cb) {
 //   cb();
 // }
 
-exports.default = series(style, watchStyle);
+exports.default = style;
+exports.dev = series(style, watchStyle);
