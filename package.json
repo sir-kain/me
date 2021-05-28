@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "Ahmadou Waly Ndiaye blog.",
   "scripts": {
-    "build": "eleventy",
+    "gulp": "gulp",
+    "eleventy": "eleventy",
+    "build": "npm-run-all --parallel eleventy gulp",
     "watch": "eleventy --watch",
     "serve:eleventy": "eleventy --serve",
-    "serve:gulp": "gulp",
+    "serve:gulp": "gulp dev",
     "start": "npm-run-all --parallel serve:*",
     "debug": "DEBUG=* eleventy"
   },
