@@ -4,13 +4,13 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-{% include "presentation.njk" %}
+{% include "partials/presentation.njk" %}
 
 {% set maxPosts = collections.posts.length | min(3) %}
 <p class="mt-2">Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</p>
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+{% include "partials/postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}" class="archive-link">the archive</a>.</p>

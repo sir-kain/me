@@ -143,4 +143,13 @@ code {
     display: block;
     margin-bottom: 1rem;
   }
+  .back-home {
+    display: block;
+    margin-top: 2rem;
+    color: var(--blue-700);
+    text-decoration: underline;
+    &:hover {
+      color: var(--blue-600);
+    }
+  }
 }

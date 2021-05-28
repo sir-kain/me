@@ -148,6 +148,16 @@ module.exports = function (eleventyConfig) {
   // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
   eleventyConfig.addJavaScriptFunction("image", imageShortcode)
 
+  eleventyConfig.on('afterBuild', () => {
+    console.log('===================================')
+    console.log('================AFTER BUILD================')
+    console.log('===================================')
+  })
+  eleventyConfig.on('beforeBuild', () => {
+    console.log('===================================')
+    console.log('================BEFORE BUILD================')
+    console.log('===================================')
+  })
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid

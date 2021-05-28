@@ -21,3 +21,5 @@ templateClass: tmpl-post
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
+
+<a href="{{ '/' | url }}" class="back-home">Back to homepage</a>
