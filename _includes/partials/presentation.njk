@@ -1,6 +1,6 @@
 <div>
   <p>Hello, I'm <b>{{metadata.author.name}}</b>. I'm a passionate web developer.</p>
-  <div class="d-f mt-1 contacts">
+  <div class="contacts">
     <p>You can find me on:</p>
     <ul>
       {% for contact in metadata.contacts %}
@@ -12,7 +12,7 @@
             contact.h %}
           </a>
         </li>
-        {%endfor%}
-      </ul>
-    </div>
+      {%endfor%}
+    </ul>
   </div>
+</div>

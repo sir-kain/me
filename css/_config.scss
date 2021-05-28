@@ -51,13 +51,8 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.9rem;
-}
-h2 {
-  font-weight: bold;
-  font-size: 1.5rem;
+ul, ol {
+  list-style: none;
 }
 
 /* Direct Links / Markdown Headers */

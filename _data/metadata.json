@@ -26,15 +26,15 @@
       "logo": "gmail.svg",
       "url": "mailto:ahmadouwalyndiaye@gmail.com",
       "h": "25",
-      "w": "25"
+      "w": "30"
     },
     {
       "title": "Github",
       "slug": "github",
       "logo": "github.png",
       "url": "https://github.com/sir-kain",
-      "h": "20",
-      "w": "20"
+      "h": "25",
+      "w": "25"
     },
     {
       "title": "LinkedIn",
@@ -42,14 +42,14 @@
       "logo": "linkedin.png",
       "url": "https://www.linkedin.com/in/ndiaye-ahmadou-waly-a61056ba/",
       "h": "25",
-      "w": "25"
+      "w": "30"
     },
     {
       "title": "StackOverflow",
       "slug": "stackoverflow",
       "logo": "stackoverflow.png",
       "url": "https://stackoverflow.com/users/8319507/sir-kane",
-      "h": "60",
+      "h": "25",
       "w": "110"
     },
     {
@@ -58,7 +58,7 @@
       "logo": "twitter.png",
       "url": "https://twitter.com/_sir_kane",
       "h": "25",
-      "w": "25"
+      "w": "30"
     }
   ]
 }
