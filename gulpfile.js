@@ -7,7 +7,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const cleanCSS = require("gulp-clean-css");
 const minify = require("gulp-minify");
 
-function style(cb) {
+function style() {
   src("css/*.scss", {
     sourcemaps: true,
   })
@@ -20,7 +20,6 @@ function style(cb) {
     .pipe(cleanCSS())
     .pipe(sourcemaps.write(""))
     .pipe(dest("_site/css/"));
-  cb();
 }
 
 function watchStyle(cb) {
