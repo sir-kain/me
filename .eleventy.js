@@ -7,6 +7,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
+const gulpFile = require('./gulpfile') 
 
 async function imageShortcode(src, alt, w, h) {
   let sizes = "(min-width: 1024px) 100vw, 50vw";
@@ -151,15 +152,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addJavaScriptFunction("image", imageShortcode)
 
   eleventyConfig.on('afterBuild', () => {
-    console.log('===================================')
-    console.log('================AFTER BUILD================')
-    console.log('===================================')
+    gulpFile.default();
   })
-  eleventyConfig.on('beforeBuild', () => {
-    console.log('===================================')
-    console.log('================BEFORE BUILD================')
-    console.log('===================================')
-  })
+
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
