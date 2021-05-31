@@ -118,12 +118,12 @@ code {
 // post
 .tmpl-post {
   time {
-    font-size: .95rem;
-    font-weight: 300;
+    font-size: .85rem;
   }
 
   main p, main li {
     line-height: 2;
+    opacity: .9;
   }
 
   // share button 
