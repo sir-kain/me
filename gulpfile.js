@@ -1,11 +1,9 @@
-const { src, series, watch, parallel, dest } = require("gulp");
-const rimraf = require("rimraf");
+const { src, series, watch, dest } = require("gulp");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const sourcemaps = require("gulp-sourcemaps");
 const cleanCSS = require("gulp-clean-css");
-const minify = require("gulp-minify");
+const purgecss = require("gulp-purgecss");
 
 function style() {
   src("css/*.scss", {
@@ -17,20 +15,19 @@ function style() {
       // return process.exit(1);
     })
     .pipe(postcss([autoprefixer()]))
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.write(""))
-    .pipe(dest("_site/css/"));
+    .pipe(
+      purgecss({
+        content: ["_site/**/*.html"], // remove unused css
+      })
+    )
+    .pipe(cleanCSS()) // minify
+    .pipe(dest("_site/css/", { sourcemaps: "." }));
 }
 
 function watchStyle(cb) {
   watch("css/*.scss", style);
   cb();
 }
-
-// function deleteCss(cb) {
-//   rimraf("_site/css/*.scss", (err) => console.error(err));
-//   cb();
-// }
 
 exports.default = style;
 exports.dev = series(style, watchStyle);
