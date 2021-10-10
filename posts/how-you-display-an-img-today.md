@@ -59,7 +59,7 @@ Et ça peut finalement devenir comme ça |> pour des raisons d'accessibilité (1
 </picture>
 ```
 
-- <picture> and <souce> [Perf]
+- `<picture> and <source>` [Perf]
 Il est généralement utilisé pour distribuer le même contenu en utilisant les différents formats pris en charge par les différents navigateurs.
 Privilégier le format webp ou avif qui sont plus performant mais aussi prevoir un fallback de format jpg
 
